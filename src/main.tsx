@@ -1,0 +1,37 @@
+import "#/global.css";
+
+import {
+  Bio,
+  FAQs,
+  Footer,
+  HeroSection,
+  Navbar,
+  Packages,
+  Products,
+  ReachOut,
+  Services,
+  Members,
+  Testimonials,
+  BackToTopButton,
+} from "@/components";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <div className="bg-primary text-primary-foreground">
+      <Navbar />
+      <HeroSection />
+    </div>
+    <Bio />
+    <Members />
+    <Services />
+    <Products />
+    <Packages />
+    <Testimonials />
+    <FAQs />
+    <ReachOut />
+    <BackToTopButton />
+    <Footer />
+  </StrictMode>
+);
