@@ -5,7 +5,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Emma Lawson",
     role: "Founder & CEO, Studio Bloom",
-    imageUrl: "/testimonials/emma-lawson.png",
+    imageUrl: "/testimonials/woman-1.png",
     testimony: {
       title: "Design that elevated our brand",
       description:
@@ -17,7 +17,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Sofia Ramirez",
     role: "Startup Founder, Flowify",
-    imageUrl: "/testimonials/sofia-ramirez.png",
+    imageUrl: "/testimonials/woman-2.png",
     testimony: {
       title: "Effortless launch experience",
       description:
@@ -29,7 +29,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Lila Chen",
     role: "UI/UX Designer, Freelance",
-    imageUrl: "/testimonials/lila-chen.png",
+    imageUrl: "/testimonials/woman-3.png",
     testimony: {
       title: "A dream toolkit for designers",
       description:
@@ -41,7 +41,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Hannah Kim",
     role: "Lead Developer, Codehaus",
-    imageUrl: "/testimonials/hannah-kim.png",
+    imageUrl: "/testimonials/woman-4.png",
     testimony: {
       title: "Clean, modular, and developer-friendly",
       description:
@@ -53,7 +53,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Priya Deshmukh",
     role: "E-Commerce Owner, Silkora",
-    imageUrl: "/testimonials/priya-deshmukh.png",
+    imageUrl: "/testimonials/woman-5.png",
     testimony: {
       title: "Increased conversions instantly",
       description:
@@ -65,7 +65,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Isabella Rossi",
     role: "Marketing Strategist, Creativo",
-    imageUrl: "/testimonials/isabella-rossi.png",
+    imageUrl: "/testimonials/woman-6.png",
     testimony: {
       title: "Polished and professional results",
       description:
@@ -77,7 +77,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Ava Thompson",
     role: "Digital Artist",
-    imageUrl: "/testimonials/ava-thompson.png",
+    imageUrl: "/testimonials/woman-7.png",
     testimony: {
       title: "Let my art shine effortlessly",
       description:
@@ -89,7 +89,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Nora Johansson",
     role: "Frontend Developer, AuroraTech",
-    imageUrl: "/testimonials/nora-johansson.png",
+    imageUrl: "/testimonials/woman-8.png",
     testimony: {
       title: "A foundation built for scalability",
       description:
@@ -101,7 +101,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Chloe Martin",
     role: "Content Creator",
-    imageUrl: "/testimonials/chloe-martin.png",
+    imageUrl: "/testimonials/woman-9.png",
     testimony: {
       title: "Beautiful and intuitive design",
       description:
@@ -113,7 +113,7 @@ export const testimonials: Testimonial[] = [
     id: crypto.randomUUID(),
     fullName: "Olivia Bennett",
     role: "Brand Consultant, Elevate Co.",
-    imageUrl: "/testimonials/olivia-bennett.png",
+    imageUrl: "/testimonials/woman-10.png",
     testimony: {
       title: "The perfect blend of style and function",
       description:
