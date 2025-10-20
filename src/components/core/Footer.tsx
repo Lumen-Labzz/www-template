@@ -1,9 +1,27 @@
+"use client";
+
+import { useState } from "react";
 import SiteLogo from "@/components/core/SiteLogo";
 import { navLinks, socialLinks } from "@/data";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { toast } from "sonner";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!email.trim()) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    toast.success("Subscribed successfully! 🎉");
+    setEmail("");
+  };
+
   return (
     <footer className="border-t border-border py-10 bg-primary text-primary-foreground">
       <div className="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -36,7 +54,6 @@ const Footer = () => {
           </ul>
         </section>
 
-        {/* Socials */}
         <section>
           <h2 className="text-lg font-semibold mb-4">Socials</h2>
           <div className="flex gap-4">
@@ -62,14 +79,15 @@ const Footer = () => {
             Stay up to date with new templates, deals, and design inspiration.
           </p>
           <form
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubscribe}
             className="flex flex-col sm:flex-row gap-2"
           >
             <Input
               type="email"
               placeholder="Enter your email"
               className="bg-white text-gray-900 placeholder:text-gray-500"
-              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <Button
               type="submit"

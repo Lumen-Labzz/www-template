@@ -16,6 +16,7 @@ import {
 } from "@/components";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { Toaster } from "sonner";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -32,6 +33,7 @@ createRoot(document.getElementById("root")!).render(
     <FAQs />
     <ReachOut />
     <BackToTopButton />
+    <Toaster richColors />
     <Footer />
   </StrictMode>
 );
