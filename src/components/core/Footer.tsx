@@ -1,12 +1,14 @@
 import SiteLogo from "@/components/core/SiteLogo";
 import { navLinks, socialLinks } from "@/data";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 const Footer = () => {
   return (
     <footer className="border-t border-border py-10 bg-primary text-primary-foreground">
-      <div className="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <section>
-          <div className="flex items-center">
+          <div className="flex items-center gap-2 mb-3">
             <SiteLogo />
             <h2 className="text-xl font-bold">WWW-Template</h2>
           </div>
@@ -24,7 +26,7 @@ const Footer = () => {
               <li key={navLink.href}>
                 <a
                   href={`#${navLink.href}`}
-                  className="flex items-center gap-2 text-sm"
+                  className="flex items-center gap-2 text-sm hover:underline hover:text-foreground transition-colors"
                 >
                   <navLink.Icon className="h-4 w-4" />
                   {navLink.label}
@@ -34,6 +36,7 @@ const Footer = () => {
           </ul>
         </section>
 
+        {/* Socials */}
         <section>
           <h2 className="text-lg font-semibold mb-4">Socials</h2>
           <div className="flex gap-4">
@@ -43,12 +46,38 @@ const Footer = () => {
                 href={socialLink.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-full border border-border hover:bg-primary hover:text-primary-foreground transition-colors"
+                className="p-2 rounded-full border border-border hover:bg-primary-foreground hover:text-primary transition-colors"
               >
                 <socialLink.Icon className="h-5 w-5" />
               </a>
             ))}
           </div>
+        </section>
+
+        <section>
+          <h2 className="text-lg font-semibold mb-4">
+            Subscribe to our Newsletter
+          </h2>
+          <p className="text-sm text-muted-foreground mb-3">
+            Stay up to date with new templates, deals, and design inspiration.
+          </p>
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="flex flex-col sm:flex-row gap-2"
+          >
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              className="bg-white text-gray-900 placeholder:text-gray-500"
+              required
+            />
+            <Button
+              type="submit"
+              className="bg-black hover:bg-gray-800 text-white"
+            >
+              Subscribe
+            </Button>
+          </form>
         </section>
       </div>
 
