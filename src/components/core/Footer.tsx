@@ -23,7 +23,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="border-t border-border py-10 bg-primary text-primary-foreground">
+    <footer className="border-t px-6 border-border py-10 bg-primary text-primary-foreground">
       <div className="container mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <section>
           <div className="flex items-center gap-2 mb-3">

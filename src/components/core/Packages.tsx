@@ -15,7 +15,7 @@ const Packages = () => {
   return (
     <section
       id="packages"
-      className="py-16 bg-muted text-muted-foreground dark:bg-background dark:text-foreground"
+      className="py-16 bg-muted px-6 text-muted-foreground dark:bg-background dark:text-foreground"
     >
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10 text-foreground">

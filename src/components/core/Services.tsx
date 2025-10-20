@@ -10,7 +10,7 @@ import { Badge } from "@/components/ui/badge";
 
 const Services = () => {
   return (
-    <section id="services" className="py-16 bg-background text-foreground">
+    <section id="services" className="py-16 px-6 bg-background text-foreground">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold text-center mb-10">Our Services</h2>
 
