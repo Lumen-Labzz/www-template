@@ -14,34 +14,36 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="flex items-center justify-between py-4 px-4 sm:px-8 lg:mx-24 xl:mx-96 relative">
-      <SiteLogo />
+    <header className="w-full py-4 px-4 sm:px-8 lg:px-20 xl:px-32 flex items-center justify-between relative">
+      <div className="flex-shrink-0">
+        <SiteLogo />
+      </div>
 
-      <div className="flex items-center gap-4">
-        <SendEmailFormDialog />
-
-        <nav className="hidden md:flex bg-primary-foreground text-primary rounded-md p-2">
-          <NavigationMenu>
-            <NavigationMenuList>
-              {navLinks.map((navlink) => (
-                <NavigationMenuItem key={navlink.href}>
-                  <NavigationMenuLink
-                    asChild
-                    className="hover:scale-110 duration-300"
+      <nav className="hidden md:flex flex-1 justify-center">
+        <NavigationMenu>
+          <NavigationMenuList className="flex items-center gap-4 bg-primary-foreground text-primary rounded-md px-4 py-2">
+            {navLinks.map((navlink) => (
+              <NavigationMenuItem key={navlink.href}>
+                <NavigationMenuLink
+                  asChild
+                  className="hover:scale-110 duration-300"
+                >
+                  <a
+                    href={`#${navlink.href}`}
+                    className="flex flex-row gap-1 items-center"
                   >
-                    <a
-                      href={`#${navlink.href}`}
-                      className="flex flex-row gap-1 items-center"
-                    >
-                      <navlink.Icon />
-                      {navlink.label}
-                    </a>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
-        </nav>
+                    <navlink.Icon />
+                    {navlink.label}
+                  </a>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+      </nav>
+
+      <div className="flex items-center gap-2">
+        <SendEmailFormDialog />
 
         <button
           className="md:hidden p-2 rounded-md"
